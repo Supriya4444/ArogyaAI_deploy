@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Arogya AI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='info.css') }}">
+</head>
+<body>
+  <div class="main-container">
+    <div class="info-section">
+      <h2>About Us</h2>
+      <p><strong>Arogya AI</strong> is your personal AI-powered wellness companion. In today’s fast-paced world, maintaining good health can be overwhelming. From medicine and diet to workouts and stress, Arogya AI brings everything together to support your holistic health journey.</p>
+
+      <p>We use advanced artificial intelligence to deliver personalized healthcare solutions that are simple, smart and effective.</p>
+
+      <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+        <li><strong>🌿 Personalized Diet and Workout Plans:</strong>
+          <ul>
+            <li>Receive customized meal and fitness plans based on your health goals and lifestyle.</li>
+            <li>Support for weight loss, muscle gain, and balanced living.</li>
+          </ul>
+        </li>
+
+        <li><strong>🧘 Stress Detection and Management:</strong>
+          <ul>
+            <li>Analyze your input and behavior to assess stress levels using AI.</li>
+            <li>Get tips and suggestions to manage anxiety and improve emotional well-being.</li>
+          </ul>
+        </li>
+
+        <li><strong>💊 AI-Powered Medicine Recommender:</strong>
+          <ul>
+            <li>Ask health-related questions and get instant medicine recommendations.</li>
+            <li>Offers guidance on common symptoms and treatments (note: not a substitute for medical advice).</li>
+          </ul>
+        </li>
+
+        <li><strong>🎯 User-Friendly Interface:</strong>
+          <ul>
+            <li>Clean, intuitive design accessible to all users — whether tech-savvy or not.</li>
+            <li>Includes helpful resources, feedback forms, and seamless navigation.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p><strong>Our Mission:</strong> To make personalized healthcare accessible to everyone, anywhere — through the power of intelligent, easy-to-use technology.</p>
+    </div>
+
+    <div class="developers-section">
+      <h2>Meet the Developers</h2>
+      <div class="developers-grid">
+        <div class="developer-card">
+          <img src="{{ url_for('static', filename='Supriya.jpg') }}" alt="Developer 1" />
+          <h3>Supriya Sarkar</h3>
+        </div>
+        <div class="developer-card">
+          <img src="{{ url_for('static', filename='Soumyadip.jpg') }}" alt="Developer 2" />
+          <h3>Soumyadip Chanda</h3>
+        </div>
+        <div class="developer-card">
+          <img src="{{ url_for('static', filename='Anushka.jpeg') }}" alt="Developer 3" />
+          <h3>Anushka Sourav</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

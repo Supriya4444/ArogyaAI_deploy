@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arogya AI</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="brand">Arogya.AI</div>
+      <div class="dropdown">
+        <button class="dropbtn">Menu ▾</button>
+        <div class="dropdown-content">
+          <a href="/contact">Contact Us</a>
+          <a href="https://forms.gle/V3GTH9e6YPpTML1TA" target="_blank" rel="noopener">Feedback</a>
+          <a href="/about">About Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-container">
+    <header>
+      <h1>
+        <span id="typed-text"></span><span class="cursor">|</span>
+      </h1>
+      <p>Where AI meets Well-being.
+
+</p>
+    </header>
+
+    <section class="cards">
+
+      <a href="/diet" class="card">
+        <div class="emoji">🥗</div>
+        <h2>Diet Recommendation</h2>
+        <p>Receive a custom diet plan tailored to your needs.</p>
+      </a>
+      <a href="/stress" class="card">
+        <div class="emoji">🧠</div>
+        <h2>Stress Detection</h2>
+        <p>Measure your current stress level using AI.</p>
+      </a>
+      <a href="/chatbot" class="card">
+        <div class="emoji">🩺</div>
+        <h2>Medicine Recommender</h2>
+        <p>Ask health-related questions and get instant advice.</p>
+      </a>      
+
+      <a href="https://fyproj-medaibot.streamlit.app/" class="chatbot-icon" aria-label="Open Chatbot">💬</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Arogya AI. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Typing Effect Script -->
+  <script>
+    const text = "Arogya.AI";
+    const typingSpeed = 200;
+    let index = 0;
+
+    function typeEffect() {
+      const target = document.getElementById("typed-text");
+      if (index < text.length) {
+        target.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, typingSpeed);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      typeEffect();
+    });
+  </script>
+</body>
+</html>

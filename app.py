@@ -5,6 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return render_template('index.html')
+
 @app.context_processor
 def inject_app_name():
     return dict(app_name="Arogya AI")
@@ -31,4 +32,4 @@ def contact():
     return render_template('contact.html')
 
 if __name__ == '__main__':
-    app.run(debug=False,host='0.0.0.0')
+    app.run(debug=False, host='0.0.0.0')
